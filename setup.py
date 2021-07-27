@@ -46,7 +46,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     package_data={'PhageBoost': [
         absolute_model_location, example_data_location]},
-    install_requires="biopython,joblib,more-itertools,numpy,pandas,pickleshare,pyrodigal,scipy,tables,xgboost,cachier,tabulate".split(
+    install_requires="biopython,joblib,more-itertools,numpy,pandas,pickleshare,pyrodigal,scipy,tables,xgboost==1.3.3,cachier,tabulate".split(
         ','),
     entry_points={'console_scripts': ['PhageBoost = PhageBoost.main:main']},
     classifiers=[
